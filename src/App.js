@@ -1,25 +1,39 @@
-import logo from './logo.svg';
-import './App.css';
-
+import "./App.css";
+import { clone } from "./functions";
+import { v4 as uuidv4 } from "uuid";
+import { useState, useEffect } from "react";
+import ReactJson from "react-json-view";
+import { list } from "./data";
+import Renderer from "./Renderer/Renderer";
 function App() {
+  const [doc, setDoc] = useState(list);
+
+  const mergeState = (setState, new_entities) => {
+    setState((old_state) => {
+      return [...old_state, ...new_entities];
+    });
+  };
+
   return (
-    <div className="App">
-      <header className="App-header">
-        <img src={logo} className="App-logo" alt="logo" />
-        <p>
-          Edit <code>src/App.js</code> and save to reload.
-        </p>
-        <a
-          className="App-link"
-          href="https://reactjs.org"
-          target="_blank"
-          rel="noopener noreferrer"
-        >
-          Learn React
-        </a>
-      </header>
+    <div>
+      <button
+        onClick={() => {
+          const clones = clone(test_tube, 6);
+          mergeState(setDoc, clones);
+        }}
+      >
+        add 5 clones
+      </button>
+      <Renderer list={doc} />
+      <ReactJson src={doc} />
     </div>
   );
 }
 
 export default App;
+
+const test_tube = {
+  id: uuidv4(),
+  name: "test_tube",
+  description: "test tube that contains purp",
+};
