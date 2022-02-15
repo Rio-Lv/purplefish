@@ -5,6 +5,11 @@ export const list = [
     description: "This test tube contains purp",
   },
   {
+    id: "ff642dc6-918f-46cb-acda-f3c140e3e04c",
+    name: "purp",
+    description: "This is a clone of test_tube",
+  },
+  {
     id: "ee642dc6-918f-46cb-acda-f3c140e3e04c",
     name: "test_tube_0",
     description: "This is a clone of test_tube",
@@ -14,13 +19,13 @@ export const list = [
     id: "7a5452af-f90c-45c7-89d3-a0bed93262c8",
     name: "test_tube_1",
     description: "This is a clone of test_tube",
-    ingredients: ["b1bb3895-e3a1-4243-af97-ab55a90c13fc"],
+    ingredients: ["ff642dc6-918f-46cb-acda-f3c140e3e04c"],
   },
   {
     id: "30e2d1f9-9cfd-4da6-b65c-d125c06a1ceb",
     name: "test_tube_2",
     description: "This is a clone of test_tube",
-    ingredients: ["b1bb3895-e3a1-4243-af97-ab55a90c13fc"],
+    ingredients: ["ff642dc6-918f-46cb-acda-f3c140e3e04c"],
   },
   {
     id: "bf8cf31d-f9bd-4481-ab4b-fcdbbc7c73e2",
