@@ -10,6 +10,15 @@ export const list = [
     description: "This is a clone of test_tube",
   },
   {
+    id: "ee64asc6-917f-46cb-acda-f3c140e3e04e",
+    name: "test_tube_with_purp",
+    description: "This is a clone of test_tube with some purp in it",
+    ingredients: [
+      "b1bb3895-e3a1-4243-af97-ab55a90c13fc",
+      "ff642dc6-918f-46cb-acda-f3c140e3e04c",
+    ],
+  },
+  {
     id: "ee642dc6-918f-46cb-acda-f3c140e3e04c",
     name: "test_tube_0",
     description: "This is a clone of test_tube",
@@ -44,5 +53,28 @@ export const list = [
     name: "test_tube_5",
     description: "This is a clone of test_tube",
     ingredients: ["b1bb3895-e3a1-4243-af97-ab55a90c13fc"],
+  },
+];
+
+export const test_tubes = [
+  {
+    uuid: "askdjfsjhgao",
+    name: "t1",
+    description: "test tube",
+  },
+  {
+    uuid: "askdjfsjhgao",
+    name: "t2",
+    description: "test tube",
+  },
+  {
+    uuid: "askdjfsjhgao",
+    name: "t3",
+    description: "test tube",
+  },
+  {
+    uuid: "askdjfsjhgao",
+    name: "t4",
+    description: "test tube",
   },
 ];
